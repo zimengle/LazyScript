@@ -1,7 +1,7 @@
 lazyWarriorLoad.metadata:updateRevisionFromKeyword("$Revision: 644 $")
 
 function lazyWarriorLoad.LoadWarriorLocalization(locale)
-	
+
 	lazyWarriorLocale.enUS.ACTION_TTS.bloodrage         = "Bloodrage"
 	lazyWarriorLocale.enUS.ACTION_TTS.charge            = "Charge"
 	lazyWarriorLocale.enUS.ACTION_TTS.battleShout       = "Battle Shout"
@@ -52,6 +52,48 @@ function lazyWarriorLoad.LoadWarriorLocalization(locale)
 	ITEM_SUBTYPE_SHIELDS = "Shields"
 	
 	function lazyWarrior.CustomLocaleHelp() return [[<H2>Warrior Criteria:</H2>]] end
+
+	if (locale == "zhCN") then
+		lazyWarriorLocale.enUS.ACTION_TTS.bloodrage         = "血性狂暴"
+		lazyWarriorLocale.enUS.ACTION_TTS.charge            = "冲锋"
+		lazyWarriorLocale.enUS.ACTION_TTS.battleShout       = "战斗怒吼"
+		lazyWarriorLocale.enUS.ACTION_TTS.thunderClap       = "雷霆一击"
+		lazyWarriorLocale.enUS.ACTION_TTS.rend              = "撕裂"
+		lazyWarriorLocale.enUS.ACTION_TTS.hamstring         = "断筋"
+		lazyWarriorLocale.enUS.ACTION_TTS.heroicStrike      = "英勇打击"
+		lazyWarriorLocale.enUS.ACTION_TTS.sunder            = "破甲攻击"
+		lazyWarriorLocale.enUS.ACTION_TTS.overpower         = "压制"
+		lazyWarriorLocale.enUS.ACTION_TTS.demoShout         = "挫志怒吼"
+		lazyWarriorLocale.enUS.ACTION_TTS.revenge           = "复仇"
+		lazyWarriorLocale.enUS.ACTION_TTS.mockingBlow       = "惩戒痛击"
+		lazyWarriorLocale.enUS.ACTION_TTS.shieldBlock       = "盾牌格挡"
+		lazyWarriorLocale.enUS.ACTION_TTS.disarm            = "缴械"
+		lazyWarriorLocale.enUS.ACTION_TTS.cleave            = "顺劈斩"
+		lazyWarriorLocale.enUS.ACTION_TTS.execute           = "斩杀"
+		lazyWarriorLocale.enUS.ACTION_TTS.deathWish         = "死亡之愿"
+		lazyWarriorLocale.enUS.ACTION_TTS.intercept         = "拦截"
+		lazyWarriorLocale.enUS.ACTION_TTS.berserkerRage     = "狂暴之怒"
+		lazyWarriorLocale.enUS.ACTION_TTS.whirlwind         = "旋风斩"
+		lazyWarriorLocale.enUS.ACTION_TTS.pummel            = "拳击"
+		lazyWarriorLocale.enUS.ACTION_TTS.bloodthirst       = "嗜血"
+		lazyWarriorLocale.enUS.ACTION_TTS.piercingHowl      = "刺耳怒吼"
+		lazyWarriorLocale.enUS.ACTION_TTS.taunt             = "嘲讽"
+		lazyWarriorLocale.enUS.ACTION_TTS.battle            = "战斗姿态"
+		lazyWarriorLocale.enUS.ACTION_TTS.defensive         = "防御姿态"
+		lazyWarriorLocale.enUS.ACTION_TTS.berserk           = "狂暴姿态"
+		lazyWarriorLocale.enUS.ACTION_TTS.lastStand         = "破釜沉舟"
+		lazyWarriorLocale.enUS.ACTION_TTS.shieldBash        = "盾击"
+		lazyWarriorLocale.enUS.ACTION_TTS.mortalStrike      = "致死打击"
+		lazyWarriorLocale.enUS.ACTION_TTS.shieldSlam        = "盾牌猛击"
+		lazyWarriorLocale.enUS.ACTION_TTS.sweepingStrikes   = "横扫攻击"
+		lazyWarriorLocale.enUS.ACTION_TTS.concussionBlow    = "震荡猛击"
+		lazyWarriorLocale.enUS.ACTION_TTS.challengingShout  = "挑战怒吼"
+		lazyWarriorLocale.enUS.ACTION_TTS.intimidatingShout = "破胆怒吼"
+		lazyWarriorLocale.enUS.ACTION_TTS.recklessness      = "鲁莽"
+		lazyWarriorLocale.enUS.ACTION_TTS.retaliation       = "反击风暴"
+		lazyWarriorLocale.enUS.ACTION_TTS.shieldWall        = "盾墙"
+		lazyWarriorLocale.enUS.ACTION_TTS.slam              = "猛击"
+	end
 	
 	if (locale == "ruRU") then
 		

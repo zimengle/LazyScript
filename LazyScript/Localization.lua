@@ -2954,7 +2954,7 @@ function lazyScript.getLocaleString(token, enOk, sayNothing)
 		end
 		else
 		if (not sayNothing) then
-			lazyScript.p("This token is not supported for your locale: "..token)
+			-- lazyScript.p("This token is not supported for your locale: "..token)
 		end
 		return nil
 	end

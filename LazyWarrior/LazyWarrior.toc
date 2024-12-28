@@ -5,6 +5,7 @@
 ## X-LazyScriptCompatibility: 3
 ## Notes: Programmable Warrior Attacks.
 ## Notes-ruRU: Программируемые атаки воина.
+## Notes-zhCN: 可编程战士攻击
 ## RequiredDeps: LazyScript
 ## OptionalDeps: MobInfo-2, Tracer
 ## LoadOnDemand: 1

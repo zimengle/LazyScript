@@ -1040,6 +1040,25 @@ BINDING_NAME_LAZYSCRIPT_KEYBIND9 = "Execute Form 9"
 BINDING_NAME_LAZYSCRIPT_KEYBIND10 = "Execute Form 10"
 
 function lazyScript.LoadLocalization(locale)
+
+	-- 没有汉化 导致一些闪过 未命中事件无法触发
+	if (locale == "zhCN") then
+		lsLocale.zhCN = {}
+		lsLocale.zhCN.PLAYER_DODGE          = ".+ attacks%. You dodge%."
+		lsLocale.zhCN.PLAYER_DODGE_SPELL    = ".+'s? .+ was dodged%."           -- GUESS
+		lsLocale.zhCN.PLAYER_PARRY          = ".+ attacks%. You parry%."
+		lsLocale.zhCN.PLAYER_PARRY_SPELL    = ".+'s? .+ was parried%."          -- GUESS
+		lsLocale.zhCN.PLAYER_BLOCK          = ".+ attacks%. You block%."
+		lsLocale.zhCN.PLAYER_BLOCK_SPELL    = ".+'s? .+ was blocked%."          -- GUESS
+		lsLocale.zhCN.PLAYER_RESIST_SPELL   = ".+'s? .+ was resisted%."
+		lsLocale.zhCN.TARGET_DODGE          = "你发起了攻击。(.+)闪开了。"
+		lsLocale.zhCN.TARGET_DODGE_SPELL    = "Your .+ was dodged by .+%."      -- GUESS
+		lsLocale.zhCN.TARGET_PARRY          = "You attack%. .+ parries%."
+		lsLocale.zhCN.TARGET_PARRY_SPELL    = "Your .+ was parried by .+%."     -- GUESS
+		lsLocale.zhCN.TARGET_BLOCK          = "You attack%. .+ blocks%."
+		lsLocale.zhCN.TARGET_BLOCK_SPELL    = "Your .+ was blocked by .+%."     -- GUESS
+		lsLocale.zhCN.TARGET_RESIST_SPELL   = "Your .+ was resisted by .+%."
+	end
 	
 	if (locale == "ruRU") then
 		-- Russia localization by Lichery

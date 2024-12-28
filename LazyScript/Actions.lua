@@ -81,6 +81,11 @@ function lazyScript.Action:CompareTexture(texture)
 end
 
 function lazyScript.Action:GetSlot(sayNothing)
+	-- todo 先mock 压制找不到插槽
+	if (self.name == 'Overpower') then
+		self.slot = 71
+		return self.slot
+	end
 	if (self.slot) then
 		if (not self.slotCheckedSinceUpdate) then
 			if (self.texture) then
